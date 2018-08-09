@@ -8,34 +8,46 @@ body {
   overflow-x: hidden;
 }
 
-@media(min-width:768px) {
 #wrapper {
-padding-right: 0
-class = "toggled";
-
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #wrapper.toggled {
-padding-right: 250px;
+  padding-left: 250px;
 }
 
 #sidebar-wrapper {
-width: 0;
+  z-index: 1000;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #000;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 #wrapper.toggled #sidebar-wrapper {
-width: 250px;
+  width: 250px;
 }
 
 #page-content-wrapper {
-
-position: absolute;
+  width: 100%;
+  position: absolute;
+  padding: 15px;
 }
 
 #wrapper.toggled #page-content-wrapper {
-position: absolute;
-margin-right: -250px;
-}
+  position: absolute;
+  margin-right: -250px;
 }
 
 
@@ -101,10 +113,10 @@ margin-right: -250px;
   }
   #page-content-wrapper {
     padding: 20px;
-    position: relative;
+    position: absolute;
   }
   #wrapper.toggled #page-content-wrapper {
-    position: relative;
+    position: absolute;
     margin-right: 0;
   }
 }
