@@ -2362,13 +2362,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-  color: #fff;
+  color: #000;
   background-color: #4caf50;
   border-color: #43a047;
 }
 
 .btn-primary:hover {
-  color: #000;
+  color: #fff;
   background-color: #357a38;
   border-color: #2e7031;
 }
