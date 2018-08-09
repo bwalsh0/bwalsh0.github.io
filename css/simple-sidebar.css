@@ -10,7 +10,9 @@ body {
 
 @media(min-width:768px) {
 #wrapper {
-padding-right: 0;
+padding-right: 0
+class = "toggled";
+
 }
 
 #wrapper.toggled {
