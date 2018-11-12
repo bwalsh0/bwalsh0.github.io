@@ -26,7 +26,7 @@
     <!-- Rich Previews -->
     <meta property="og:title" content="Portfolio - Bryan Walsh" />
     <meta property="og:image" content="images/preview-logo.png" />
-    <meta property="og:description" content="A directory of my projects and information." />
+    <meta property="og:description" content="A collection of all my projects and academics." />
 
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -44,8 +44,9 @@
 
     <link rel="shortcut icon" href="images/favicon.png">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://storage.googleapis.com/non-spec-apps/mio-icons/latest/round.css">
     <link rel="stylesheet" href="custom.css">
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -61,17 +62,8 @@
       margin-bottom: 40px;
       z-index: 900;
     }
-    .demo-card-wide.mdl-card {
-  		width: calc(66.6666666667% - 16px);
-  		border-radius: 8px;
-	}
-	.demo-card-wide > .mdl-card__title {
-	  color: rgba(255, 255, 255, 0.95);
-	  height: 100px;
-	  background: rgba(21, 101, 192, 0.8);
-	}
-	.demo-card-wide > .mdl-card__menu {
-	  color: #fff;
+	.demo-list-two {
+  		width: 400px;
 	}
     </style>
   </head>
@@ -79,46 +71,46 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header mdl-layout__header--waterfall mdl-shadow--2dp">
         <div class="mdl-layout--large-screen-only mdl-layout__header-row">
-          <h4>Bryan Walsh</h4>
+          <h4 style="font-family: Roboto, serif">Bryan Walsh</h4>
         </div>
         <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary">
           <a href="#overview" class="mdl-layout__tab is-active">Overview</a>
           <a href="#resume" class="mdl-layout__tab">Resume</a>
           <a href="#projects" class="mdl-layout__tab">Projects</a>
-          <a href="#contact" class="mdl-layout__tab">Contact Me</a>
+          <a href="#contacts" class="mdl-layout__tab">Contact Me</a>
         </div>
       </header>
       <main class="mdl-layout__content">
       	
       	<!-- BEGIN OVERVIEW -->
         <div class="mdl-layout__tab-panel is-active" id="overview">
-        <div class="demo-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="demo-card-wide mdl-card mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-			  <div class="mdl-card__title">
+        <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <!-- <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div> -->
+          <div class="demo-card-wide mdl-card" style="background: rgba(21, 101, 192, 0.05)">
+			  <div class="mdl-card__title_cover">
 			    <h3 align="center">Welcome to my Portfolio</h3>
 			  </div>
 			  <div class="mdl-card__supporting-text">
 			    <h6 align="center">
-             	I'm an Electrical Engineering undergraduate at University of California, Riverside. You can reach me via <a href="mailto:bryanwalsh00@gmail.com" target="_blank">bryanwalsh00@gmail.com</a>, or click the tabs above for my projects, resume, and other contacts.</h6>
+             	I'm an Electrical Engineering undergraduate at University of California, Riverside. This webpage serves as a directory for all of my academic and career-related information.<br><br>You can reach me via <a href="mailto:bryanwalsh00@gmail.com" target="_blank">bryanwalsh00@gmail.com</a>, or click the tabs above for my projects, resume, and other contacts.</h6>
 			  </div>
 			</div>
         </div>
-        </div>
+    </section>
 
         <!-- BEGIN RESUME -->
         <div class="mdl-layout__tab-panel" id="resume">
-        	<div class="demo-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <div class="demo-card-wide mdl-card mdl-shadow--4dp" align="center">
-			  <div class="mdl-card__title">
+        	<section class="section--center mdl-grid mdl-grid--no-spacing">
+          <!-- <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div> -->
+          <div class="demo-card-wide mdl-card" style="background: rgba(21, 101, 192, 0.05)">
+			  <div class="mdl-card__title_cover">
 			    <h3 align="center">My Resume</h3>
 			  </div>
 			  <div class="mdl-card__supporting-text">
-			    <h6 align="center"><b>Last updated November 2018.</b><br>If the embedded PDF Viewer below doesn't load in your browser, you may download the PDF or view it directly in another tab.</h6>
+			    <h6 align="center">Last updated November 2018.<br><br>If the embedded PDF Viewer below doesn't load in your browser, you may download the PDF or view it directly in another tab.</h6>
 			  </div>
 			  <div class="mdl-card__actions">
-			    <a class="mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="images/Resume-Bryan_Walsh.pdf" download="Resume-Bryan_Walsh">
+			    <a class="mdl-button mdl-button--raised mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="images/Resume-Bryan_Walsh.pdf" download="Resume-Bryan_Walsh.pdf" target="_blank">
 			      Download PDF
 			    </a>
 			    <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" href="images/Resume-Bryan_Walsh.pdf" target="_blank">
@@ -126,7 +118,7 @@
 			    </a>
 			  </div>
 			</div>
-        </div>
+        </section>
           <section class="section--center mdl-grid">
             <div class="mdl-cell mdl-cell--12-col">
               <h6 align="center">PDF Viewer</h6>
@@ -135,19 +127,81 @@
           </section>
         </div>
 
+        <!-- BEGIN PROJECTS -->
         <div class="mdl-layout__tab-panel" id="projects">
         	<div class="demo-container mdl-grid">
-          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
-          <ul class="toc">
-                <h4>Project List (Work in Progress)</h4>
-                <a href="#one">Project #1</a>
-                <a href="#two">Project #2</a>
-                <a href="#three">Project #3</a>
-                <a href="#four">Project #4</a>
-                <a href="#five">Project #5</a>
-              </ul>
+          <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <ul class="demo-list-two mdl-list">
+			<li class="mdl-list__item mdl-list__item--two-line">
+			    <span class="mdl-list__item-primary-content">
+			      <a class="mdl-list__item-secondary-action" href="#1"><i class="material-icons round-folder mdl-list__item-avatar icon-white"></i>
+			      <span>Project #1</span>
+			      <span class="mdl-list__item-sub-title">Ongoing</span>
+			  		</a>
+			    </span>
+			    <span class="mdl-list__item-secondary-content">
+			      <span class="mdl-list__item-secondary-info"></span>
+			      <a class="mdl-list__item-secondary-action" href="#1"><i class="material-icons round-last_page"></i></a>
+			    </span>
+			</li>
+
+  			<li class="mdl-list__item mdl-list__item--two-line">
+			    <span class="mdl-list__item-primary-content">
+			      <a class="mdl-list__item-secondary-action" href="#2"><i class="material-icons round-folder mdl-list__item-avatar icon-white"></i>
+			      <span>Project #2</span>
+			      <span class="mdl-list__item-sub-title"></span>
+			  		</a>
+			    </span>
+			    <span class="mdl-list__item-secondary-content">
+			      <span class="mdl-list__item-secondary-info"></span>
+			      <a class="mdl-list__item-secondary-action" href="#2"><i class="material-icons round-last_page"></i></a>
+			    </span>
+			</li>
+
+  			<li class="mdl-list__item mdl-list__item--two-line">
+			    <span class="mdl-list__item-primary-content">
+			      <a class="mdl-list__item-secondary-action" href="#3"><i class="material-icons round-folder mdl-list__item-avatar icon-white"></i>
+			      <span>Project #3</span>
+			      <span class="mdl-list__item-sub-title">Ongoing</span>
+			  		</a>
+			    </span>
+			    <span class="mdl-list__item-secondary-content">
+			      <span class="mdl-list__item-secondary-info"></span>
+			      <a class="mdl-list__item-secondary-action" href="#3"><i class="material-icons round-last_page"></i></a>
+			    </span>
+			</li>
+			</ul>
+		</section>
+
+		<section class="section--center mdl-grid mdl-grid--no-spacing">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h3>This page is under construction</h3>
+                <h6>In the meantime, some of my projects are documented on my LinkedIn.</h6>
+              </div>
+              <a class="mdl-button mdl-button--accent mdl-js-button mdl-js-ripple-effect" href="images/Resume-Bryan_Walsh.pdf" target="_blank">
+			      View on the Google Play Store
+			    </a>
+            </div>
+        </section>
+
         </div>
+    </div>
+
+    <div class="mdl-layout__tab-panel is-active" id="contacts">
+        <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <!-- <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div> -->
+          <div class="demo-card-wide mdl-card" style="background: rgba(21, 101, 192, 0.05)">
+			  <div class="mdl-card__title_cover">
+			    <h3 align="center">This page is under construction</h3>
+			  </div>
+			  <div class="mdl-card__supporting-text">
+			    <h6 align="center">
+             	In the meantime, please refer to my LinkedIn or resume for contact information.</h6>
+			  </div>
+			</div>
         </div>
+    </section>
 
       </main>
       <footer class="mdl-mini-footer mdl-shadow--2dp" style="flex: 0 0 auto;">
