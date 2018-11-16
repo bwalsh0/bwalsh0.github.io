@@ -4254,6 +4254,16 @@ a.listLink {
     filter: alpha(opacity=0);
 }
 
+a.listLink_discrete {
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: normal;
+    z-index: 10;
+    filter: alpha(opacity=0);
+}
+
 .mdl-list__item,
 .mdl-list__item .mdl-list__item-primary-content {
     box-sizing: border-box;
