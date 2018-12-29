@@ -1,0 +1,131 @@
+<!doctype html>
+<!--
+  Material Design Components
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Bryan Walsh's Portfolio for Electrical Engineering and Software Development - University of California, Riverside">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Bryan Walsh's Portfolio</title>
+
+    <!-- Rich Previews -->
+    <meta property="og:title" content="Portfolio - Bryan Walsh" />
+    <meta property="og:image" content="images/preview-logo.png" />
+    <meta property="og:description" content="A directory of my projects and information." />
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/chromeIcon.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Bryan Walsh's Portfolio">
+    <link rel="apple-touch-icon-precomposed" href="images/iosIcon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="winIcon.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type {
+    padding-right: 0;
+  }
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+  .demo-list-two {
+      width: 400px;
+  }
+    </style>
+  </head>
+  <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-800 mdl-base">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header mdl-layout__header--waterfall mdl-shadow--2dp">
+        <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+          <h4>Bryan Walsh</h4>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary">
+          <a href="index.html" class="mdl-layout__tab">Back to Portfolio</a>
+          <a href="#" class="mdl-layout__tab is-active">Misc.</a>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        
+        <!-- BEGIN OVERVIEW -->
+        <div class="mdl-layout__tab-panel is-active">
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing">
+          <div class="demo-card-wide mdl-card" style="background: rgba(21, 101, 192, 0.05)">
+        <div class="mdl-card__title_cover">
+          <h3 align="center">Reddit Wallpaper Changer<br><font size="+1">Support</font></h3>
+        </div>
+        <div class="mdl-card__supporting-text">
+          <h6>
+              If you own a Samsung, OnePlus, HuaWei, or a device from another company that doesn't use near-stock AOSP, these manufacturers use a more aggressive battery manager that can prevent the wallpaper from updating. Depending on your device, possible solutions are listed below.<br><br></h6>
+        <h5><b>Samsung</b></h5><br>
+        <h6>
+			Go to <b>Settings -> Apps</b><br>
+			Tap on the <b>3-dot menu</b> in the top corner.<br>
+			Open <b>Special Access -> Optimize Battery Usage.</b><br>
+			Change sorting from <b>Apps not optimized</b>, to <b>All apps</b><br>
+			Find Reddit Wallpaper Changer and turn off battery optimization.<br><br>
+		</p>
+		<h5><b>OnePlus</b></h5><br>
+		<h6>
+			Go to <b>Settings -> Apps</b><br>
+			Tap on the <b>gear icon</b><br>
+			Open <b>Apps Auto-Launch</b><br>
+			Find Reddit Wallpaper Changer and turn on auto-launch.<br><br>
+		</h6>
+		<h5><b>HuaWei</b></h5><br>
+		<h6>
+			Open <b>System settings -> Advanced Settings -> Battery Manager -> Protected apps</b><br>
+			Turn on "Keep running while screen is off"<br>
+		</h6>
+		
+        </div>
+      </div>
+    </section>
+        </div>
+
+      </main>
+      <footer class="mdl-mini-footer mdl-shadow--2dp" style="flex: 0 0 auto;">
+      <div class="mdl-mini-footer__left-section">
+        <div class="mdl-logo">Designed by Bryan Walsh</div>
+        <ul class="mdl-mini-footer__link-list">
+          <li>Components derived from Google's MDC Library under Apache License v2.0.</li>
+        </ul>
+      </div>
+    </footer>
+    </div>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
